@@ -95,7 +95,7 @@ def teachable_machine_classification(img, weights_file):
 def main():
 
     # タイトルの表示
-    st.title("Image Classification with Google's Teachable Machine")
+    st.title("城判別")
 
     # アップローダの作成
     uploaded_file = st.file_uploader("Choose a Image...", type="jpg")
@@ -122,9 +122,9 @@ def main():
 
         # 推論で得られたクラス番号(初期値は0)によって出力結果を分岐
         if classNo == 0:
-            st.subheader(f"これは{pred0}％の確率で「猫」です！")
+            st.subheader(f"これは{pred0}％の確率で「金沢城」です！")
         else:
-            st.subheader(f"これは{pred1}％の確率で「犬」です！")
+            st.subheader(f"これは{pred1}％の確率で「名古屋城」です！")
 
 
 # mainの起動
