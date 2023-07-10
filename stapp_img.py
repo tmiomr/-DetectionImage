@@ -122,9 +122,9 @@ def main():
 
         # 推論で得られたクラス番号(初期値は0)によって出力結果を分岐
         if classNo == 0:
-            st.subheader(f"これは{pred0}％の確率で「金沢城」です！")
+            st.subheader(f"これは{pred0}％の確率で「名古屋城」です！")
         else:
-            st.subheader(f"これは{pred1}％の確率で「名古屋城」です！")
+            st.subheader(f"これは{pred1}％の確率で「金沢城」です！")
 
 
 # mainの起動
